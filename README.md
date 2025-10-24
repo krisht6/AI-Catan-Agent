@@ -8,8 +8,8 @@ This project is an AI agent designed to play Settlers of Catan, with a long-term
 
 The agent will be developed step-by-step, focusing on one core component of gameplay at a time. Each stage builds upon the previous one, allowing the system to grow in complexity and intelligence in a controlled way.
 
-**Stage 1: Game State Representation
-**
+**Stage 1: Game State Representation**
+
 The foundation of the AI is an accurate representation of the game state. This includes:
 	•	Board layout (tiles, numbers, ports)
 	•	Resource distribution
@@ -18,16 +18,16 @@ The foundation of the AI is an accurate representation of the game state. This i
 
 Initially, the AI is given its first two settlements manually. Later, it will evaluate the board and determine optimal starting placements autonomously using heuristics or reinforcement signals.
 
-**Stage 2: Reinforcement Learning Setup
-**
+**Stage 2: Reinforcement Learning Setup**
+
 The learning backbone of the agent is Q-learning (or another RL variant if the complexity requires adaptation).
 Key components include:
 	•	State encoding: Translating board conditions into structured numerical representations.
 	•	Action space: Possible moves such as building, trading, or buying development cards.
 	•	Q-values: Representing the expected reward of taking specific actions in each state.
 
-**Stage 3: Reward System
-**
+**Stage 3: Reward System**
+
 The AI learns through rewards tied to in-game objectives:
 	•	Building settlements or cities
 	•	Achieving “Longest Road” or “Largest Army”
@@ -36,8 +36,8 @@ The AI learns through rewards tied to in-game objectives:
 
 Rewards are contextual and depend on the AI’s current resources, position, and strategy. This system encourages the AI to balance short-term gains (e.g., resource optimization) and long-term goals (e.g., victory conditions).
 
-**Stage 4: Trading Logic
-**
+**Stage 4: Trading Logic**
+
 Trading is one of the most human aspects of Catan. It involves both strategy and negotiation.
 Our approach introduces it gradually:
 	1.	Step 1: AI only accepts trades that directly support its active goals.
@@ -46,16 +46,16 @@ Our approach introduces it gradually:
 
 This structured approach helps the AI develop rational, adaptive trading behavior over time.
 
-**Stage 5: Simulation and Training
-**
+**Stage 5: Simulation and Training**
+
 The agent will train across thousands of simulated Catan games to develop competitive play strategies.
 Throughout training:
 	•	We collect performance metrics and gameplay logs.
 	•	We analyze patterns in decision-making and outcomes.
 	•	We refine the state, reward, and trade systems to improve adaptability and consistency.
 
-**Future Work
-**	•	Expand from basic Catan to Cities and Knights ruleset.
+**Future Work**
+	•	Expand from basic Catan to Cities and Knights ruleset.
 	•	Incorporate multi-agent training for more dynamic environments.
 	•	Add heuristic and neural policy comparisons for decision refinement.
 	•	Develop a visualization dashboard to track learning progress and in-game decision flow.
